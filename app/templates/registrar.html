@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Registrar Ponto</h1>
+<form method="post">
+    <div class="form-group">
+        <label for="pis">PIS</label>
+        <input type="text" class="form-control" id="pis" name="pis" required>
+    </div>
+    <div class="form-group">
+        <label for="tipo">Tipo</label>
+        <select class="form-control" id="tipo" name="tipo" required>
+            <option value="entrada">Entrada</option>
+            <option value="saida">Saída</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Registrar</button>
+</form>
+{% endblock %}
